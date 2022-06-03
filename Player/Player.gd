@@ -56,6 +56,7 @@ func move_state(delta):
 	if Input.is_action_just_pressed("attack"):
 		state = ATTACK
 
+# warning-ignore:unused_argument
 func attack_state(delta):
 	velocity = Vector2.ZERO
 	animationState.travel("Attack")
