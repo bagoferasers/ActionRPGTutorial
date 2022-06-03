@@ -1,7 +1,8 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.png" type="Texture" id=2]
+[ext_resource path="res://Overlap/Hitbox.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 4.0
@@ -374,6 +375,10 @@ graph_offset = Vector2( 261, 95.0924 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=17]
 
+[sub_resource type="CapsuleShape2D" id=36]
+radius = 6.0
+height = 8.0
+
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 0, -8 )
 script = ExtResource( 1 )
@@ -411,3 +416,15 @@ parameters/playback = SubResource( 17 )
 parameters/Attack/blend_position = Vector2( 0.316583, -0.113143 )
 parameters/Idle/blend_position = Vector2( 0, 0 )
 parameters/Run/blend_position = Vector2( 0, 0 )
+
+[node name="HitboxPivot" type="Position2D" parent="."]
+position = Vector2( 0, 3 )
+
+[node name="SwordHitbox" parent="HitboxPivot" instance=ExtResource( 3 )]
+position = Vector2( 0, -4 )
+
+[node name="CollisionShape2D" parent="HitboxPivot/SwordHitbox" index="0"]
+position = Vector2( 0, 4 )
+shape = SubResource( 36 )
+
+[editable path="HitboxPivot/SwordHitbox"]
