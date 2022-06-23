@@ -13,9 +13,9 @@ height = 12.0
 position = Vector2( 0, -4 )
 texture = ExtResource( 1 )
 
-[node name="LargeShadow" type="Sprite" parent="Sprite"]
+[node name="LargeShadow" type="Sprite" parent="."]
 show_behind_parent = true
-position = Vector2( -0.297302, 7.33107 )
+position = Vector2( -0.297302, 3.33107 )
 rotation = -1.5708
 scale = Vector2( 0.484367, 1.49055 )
 texture = ExtResource( 2 )

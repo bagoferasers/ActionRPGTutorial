@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=2]
+[gd_scene load_steps=57 format=2]
 
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://World/DirtTileset.png" type="Texture" id=4]
 [ext_resource path="res://World/CliffTileset.png" type="Texture" id=5]
 [ext_resource path="res://World/Grass.tscn" type="PackedScene" id=6]
+[ext_resource path="res://World/Fern.tscn" type="PackedScene" id=7]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -591,3 +592,23 @@ position = Vector2( 222, 79 )
 
 [node name="Grass13" parent="YSort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 310, 176 )
+
+[node name="Ferns" type="YSort" parent="YSort"]
+
+[node name="Fern" parent="YSort/Ferns" instance=ExtResource( 7 )]
+position = Vector2( 17, 113 )
+
+[node name="Fern2" parent="YSort/Ferns" instance=ExtResource( 7 )]
+position = Vector2( 315, 174 )
+
+[node name="Fern3" parent="YSort/Ferns" instance=ExtResource( 7 )]
+position = Vector2( 84, 61 )
+
+[node name="Fern4" parent="YSort/Ferns" instance=ExtResource( 7 )]
+position = Vector2( 298, 13 )
+
+[node name="Fern5" parent="YSort/Ferns" instance=ExtResource( 7 )]
+position = Vector2( 244, 142 )
+
+[node name="Fern6" parent="YSort/Ferns" instance=ExtResource( 7 )]
+position = Vector2( 239, 73 )
