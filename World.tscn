@@ -853,3 +853,9 @@ position = Vector2( 253, 73 )
 
 [node name="Bat2" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 296, 90 )
+
+[node name="Bat4" parent="YSort" instance=ExtResource( 8 )]
+position = Vector2( 231, 88 )
+
+[node name="Bat5" parent="YSort" instance=ExtResource( 8 )]
+position = Vector2( 234, 105 )
